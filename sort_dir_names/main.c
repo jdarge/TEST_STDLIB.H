@@ -7,7 +7,6 @@ struct dirent **namelist;
 
     int n;
 
-
     n = scandir(".", &namelist, NULL, alphasort);
     if (n == -1) {
         perror("scandir");
