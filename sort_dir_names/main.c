@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 int main(void) {
-struct dirent **namelist;
-
+    
     int n;
+    struct dirent **namelist;
 
     n = scandir(".", &namelist, NULL, alphasort);
     if (n == -1) {
